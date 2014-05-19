@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		228618F5192926090048B1A3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228618F4192926090048B1A3 /* Cocoa.framework */; };
+		228618FF192926090048B1A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 228618FD192926090048B1A3 /* InfoPlist.strings */; };
+		22861901192926090048B1A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22861900192926090048B1A3 /* main.m */; };
+		22861905192926090048B1A3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 22861903192926090048B1A3 /* Credits.rtf */; };
+		22861908192926090048B1A3 /* SDMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22861907192926090048B1A3 /* SDMAppDelegate.m */; };
+		2286190B1929260A0048B1A3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228619091929260A0048B1A3 /* MainMenu.xib */; };
+		2286190D1929260A0048B1A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2286190C1929260A0048B1A3 /* Images.xcassets */; };
+		228619141929260A0048B1A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228619131929260A0048B1A3 /* XCTest.framework */; };
+		228619151929260A0048B1A3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228618F4192926090048B1A3 /* Cocoa.framework */; };
+		2286191D1929260A0048B1A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2286191B1929260A0048B1A3 /* InfoPlist.strings */; };
+		2286191F1929260A0048B1A3 /* usbtermTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2286191E1929260A0048B1A3 /* usbtermTests.m */; };
+		22861933192926AF0048B1A3 /* SDMUSBTermWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22861931192926AF0048B1A3 /* SDMUSBTermWindowController.m */; };
+		22861934192926AF0048B1A3 /* SDMUSBTermWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22861932192926AF0048B1A3 /* SDMUSBTermWindowController.xib */; };
+		22861938192926D30048B1A3 /* SDMUSBTermPluginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22861936192926D30048B1A3 /* SDMUSBTermPluginViewController.m */; };
+		22861939192926D30048B1A3 /* SDMUSBTermPluginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22861937192926D30048B1A3 /* SDMUSBTermPluginViewController.xib */; };
+		2286193D192926E50048B1A3 /* SDMUSBTermConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2286193B192926E50048B1A3 /* SDMUSBTermConsoleViewController.m */; };
+		2286193E192926E50048B1A3 /* SDMUSBTermConsoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2286193C192926E50048B1A3 /* SDMUSBTermConsoleViewController.xib */; };
+		2286194119292CB60048B1A3 /* SDMUSBTermPluginTableDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2286194019292CB60048B1A3 /* SDMUSBTermPluginTableDatasource.m */; };
+		22861947192931420048B1A3 /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 22861946192931420048B1A3 /* NSFileManager+DirectoryLocations.m */; };
+		2286196E1929341A0048B1A3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228618F4192926090048B1A3 /* Cocoa.framework */; };
+		228619741929341A0048B1A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 228619721929341A0048B1A3 /* InfoPlist.strings */; };
+		2286197B192934A70048B1A3 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2286197A192934A70048B1A3 /* IOKit.framework */; };
+		2286198A192936700048B1A3 /* USBTermPluginIBoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 22861989192936700048B1A3 /* USBTermPluginIBoot.m */; };
+		2286198B192936EF0048B1A3 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2286197A192934A70048B1A3 /* IOKit.framework */; };
+		2286199119293A240048B1A3 /* SDMUSBTermPluginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2286199019293A240048B1A3 /* SDMUSBTermPluginItem.m */; };
+		2286199419293AFC0048B1A3 /* iBoot.usbplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2286196D1929341A0048B1A3 /* iBoot.usbplugin */; };
+		22861999192945480048B1A3 /* SDMUSBTermDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22861997192945480048B1A3 /* SDMUSBTermDeviceViewController.m */; };
+		2286199A192945480048B1A3 /* SDMUSBTermDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22861998192945480048B1A3 /* SDMUSBTermDeviceViewController.xib */; };
+		228619A2192947520048B1A3 /* SDMUSBTermDeviceTableDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 228619A1192947520048B1A3 /* SDMUSBTermDeviceTableDatasource.m */; };
+		228619A51929475F0048B1A3 /* SDMUSBTermDeviceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 228619A41929475F0048B1A3 /* SDMUSBTermDeviceItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		228619161929260A0048B1A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228618E9192926090048B1A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 228618F0192926090048B1A3;
+			remoteInfo = usbterm;
+		};
+		2286198C192937A30048B1A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228618E9192926090048B1A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2286196C1929341A0048B1A3;
+			remoteInfo = iBoot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2286199319293AEF0048B1A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2286199419293AFC0048B1A3 /* iBoot.usbplugin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		228618F1192926090048B1A3 /* usbterm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usbterm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		228618F4192926090048B1A3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		228618F7192926090048B1A3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		228618F8192926090048B1A3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		228618F9192926090048B1A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		228618FC192926090048B1A3 /* usbterm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "usbterm-Info.plist"; sourceTree = "<group>"; };
+		228618FE192926090048B1A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22861900192926090048B1A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22861902192926090048B1A3 /* usbterm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "usbterm-Prefix.pch"; sourceTree = "<group>"; };
+		22861904192926090048B1A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		22861906192926090048B1A3 /* SDMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMAppDelegate.h; sourceTree = "<group>"; };
+		22861907192926090048B1A3 /* SDMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDMAppDelegate.m; sourceTree = "<group>"; };
+		2286190A1929260A0048B1A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2286190C1929260A0048B1A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		228619121929260A0048B1A3 /* usbtermTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = usbtermTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		228619131929260A0048B1A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2286191A1929260A0048B1A3 /* usbtermTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "usbtermTests-Info.plist"; sourceTree = "<group>"; };
+		2286191C1929260A0048B1A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2286191E1929260A0048B1A3 /* usbtermTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = usbtermTests.m; sourceTree = "<group>"; };
+		22861930192926AF0048B1A3 /* SDMUSBTermWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMUSBTermWindowController.h; sourceTree = "<group>"; };
+		22861931192926AF0048B1A3 /* SDMUSBTermWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMUSBTermWindowController.m; sourceTree = "<group>"; };
+		22861932192926AF0048B1A3 /* SDMUSBTermWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDMUSBTermWindowController.xib; sourceTree = "<group>"; };
+		22861935192926D30048B1A3 /* SDMUSBTermPluginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMUSBTermPluginViewController.h; sourceTree = "<group>"; };
+		22861936192926D30048B1A3 /* SDMUSBTermPluginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMUSBTermPluginViewController.m; sourceTree = "<group>"; };
+		22861937192926D30048B1A3 /* SDMUSBTermPluginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDMUSBTermPluginViewController.xib; sourceTree = "<group>"; };
+		2286193A192926E50048B1A3 /* SDMUSBTermConsoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMUSBTermConsoleViewController.h; sourceTree = "<group>"; };
+		2286193B192926E50048B1A3 /* SDMUSBTermConsoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMUSBTermConsoleViewController.m; sourceTree = "<group>"; };
+		2286193C192926E50048B1A3 /* SDMUSBTermConsoleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDMUSBTermConsoleViewController.xib; sourceTree = "<group>"; };
+		2286193F19292CB60048B1A3 /* SDMUSBTermPluginTableDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMUSBTermPluginTableDatasource.h; sourceTree = "<group>"; };
+		2286194019292CB60048B1A3 /* SDMUSBTermPluginTableDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMUSBTermPluginTableDatasource.m; sourceTree = "<group>"; };
+		22861945192931420048B1A3 /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
+		22861946192931420048B1A3 /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		2286194D192933B80048B1A3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2286196D1929341A0048B1A3 /* iBoot.usbplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iBoot.usbplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		228619711929341A0048B1A3 /* iBoot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iBoot-Info.plist"; sourceTree = "<group>"; };
+		228619731929341A0048B1A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		228619751929341A0048B1A3 /* iBoot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBoot-Prefix.pch"; sourceTree = "<group>"; };
+		228619791929344C0048B1A3 /* SDMUSBTermPluginProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMUSBTermPluginProtocol.h; sourceTree = "<group>"; };
+		2286197A192934A70048B1A3 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		22861988192936700048B1A3 /* USBTermPluginIBoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USBTermPluginIBoot.h; path = iboot/USBTermPluginIBoot.h; sourceTree = SOURCE_ROOT; };
+		22861989192936700048B1A3 /* USBTermPluginIBoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USBTermPluginIBoot.m; path = iboot/USBTermPluginIBoot.m; sourceTree = SOURCE_ROOT; };
+		2286198F19293A240048B1A3 /* SDMUSBTermPluginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMUSBTermPluginItem.h; sourceTree = "<group>"; };
+		2286199019293A240048B1A3 /* SDMUSBTermPluginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMUSBTermPluginItem.m; sourceTree = "<group>"; };
+		22861996192945480048B1A3 /* SDMUSBTermDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMUSBTermDeviceViewController.h; sourceTree = "<group>"; };
+		22861997192945480048B1A3 /* SDMUSBTermDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMUSBTermDeviceViewController.m; sourceTree = "<group>"; };
+		22861998192945480048B1A3 /* SDMUSBTermDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDMUSBTermDeviceViewController.xib; sourceTree = "<group>"; };
+		228619A0192947520048B1A3 /* SDMUSBTermDeviceTableDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMUSBTermDeviceTableDatasource.h; sourceTree = "<group>"; };
+		228619A1192947520048B1A3 /* SDMUSBTermDeviceTableDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMUSBTermDeviceTableDatasource.m; sourceTree = "<group>"; };
+		228619A31929475F0048B1A3 /* SDMUSBTermDeviceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMUSBTermDeviceItem.h; sourceTree = "<group>"; };
+		228619A41929475F0048B1A3 /* SDMUSBTermDeviceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMUSBTermDeviceItem.m; sourceTree = "<group>"; };
+		228619A6192948D20048B1A3 /* SDMTableViewItemProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMTableViewItemProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		228618EE192926090048B1A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2286197B192934A70048B1A3 /* IOKit.framework in Frameworks */,
+				228618F5192926090048B1A3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2286190F1929260A0048B1A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				228619151929260A0048B1A3 /* Cocoa.framework in Frameworks */,
+				228619141929260A0048B1A3 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2286196A1929341A0048B1A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2286198B192936EF0048B1A3 /* IOKit.framework in Frameworks */,
+				2286196E1929341A0048B1A3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		228618E8192926090048B1A3 = {
+			isa = PBXGroup;
+			children = (
+				228618FA192926090048B1A3 /* usbterm */,
+				228619181929260A0048B1A3 /* usbtermTests */,
+				2286196F1929341A0048B1A3 /* iBoot */,
+				228618F3192926090048B1A3 /* Frameworks */,
+				228618F2192926090048B1A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		228618F2192926090048B1A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				228618F1192926090048B1A3 /* usbterm.app */,
+				228619121929260A0048B1A3 /* usbtermTests.xctest */,
+				2286196D1929341A0048B1A3 /* iBoot.usbplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		228618F3192926090048B1A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2286197A192934A70048B1A3 /* IOKit.framework */,
+				228618F4192926090048B1A3 /* Cocoa.framework */,
+				228619131929260A0048B1A3 /* XCTest.framework */,
+				2286194D192933B80048B1A3 /* CoreFoundation.framework */,
+				228618F6192926090048B1A3 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		228618F6192926090048B1A3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				228618F7192926090048B1A3 /* AppKit.framework */,
+				228618F8192926090048B1A3 /* CoreData.framework */,
+				228618F9192926090048B1A3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		228618FA192926090048B1A3 /* usbterm */ = {
+			isa = PBXGroup;
+			children = (
+				22861982192934FC0048B1A3 /* Interfaces */,
+				22861980192934ED0048B1A3 /* Controllers */,
+				228619841929351A0048B1A3 /* DataSources */,
+				2286197D192934CD0048B1A3 /* Delegates */,
+				2286197C192934C10048B1A3 /* Categories */,
+				228619871929354A0048B1A3 /* Protocols */,
+				2286190C1929260A0048B1A3 /* Images.xcassets */,
+				228618FB192926090048B1A3 /* Supporting Files */,
+			);
+			path = usbterm;
+			sourceTree = "<group>";
+		};
+		228618FB192926090048B1A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				228618FC192926090048B1A3 /* usbterm-Info.plist */,
+				228618FD192926090048B1A3 /* InfoPlist.strings */,
+				22861900192926090048B1A3 /* main.m */,
+				22861902192926090048B1A3 /* usbterm-Prefix.pch */,
+				22861903192926090048B1A3 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		228619181929260A0048B1A3 /* usbtermTests */ = {
+			isa = PBXGroup;
+			children = (
+				2286191E1929260A0048B1A3 /* usbtermTests.m */,
+				228619191929260A0048B1A3 /* Supporting Files */,
+			);
+			path = usbtermTests;
+			sourceTree = "<group>";
+		};
+		228619191929260A0048B1A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2286191A1929260A0048B1A3 /* usbtermTests-Info.plist */,
+				2286191B1929260A0048B1A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2286196F1929341A0048B1A3 /* iBoot */ = {
+			isa = PBXGroup;
+			children = (
+				22861988192936700048B1A3 /* USBTermPluginIBoot.h */,
+				22861989192936700048B1A3 /* USBTermPluginIBoot.m */,
+				228619701929341A0048B1A3 /* Supporting Files */,
+			);
+			path = iBoot;
+			sourceTree = "<group>";
+		};
+		228619701929341A0048B1A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				228619711929341A0048B1A3 /* iBoot-Info.plist */,
+				228619721929341A0048B1A3 /* InfoPlist.strings */,
+				228619751929341A0048B1A3 /* iBoot-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2286197C192934C10048B1A3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				22861945192931420048B1A3 /* NSFileManager+DirectoryLocations.h */,
+				22861946192931420048B1A3 /* NSFileManager+DirectoryLocations.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		2286197D192934CD0048B1A3 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2286197E192934D40048B1A3 /* App Delegate */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		2286197E192934D40048B1A3 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				22861906192926090048B1A3 /* SDMAppDelegate.h */,
+				22861907192926090048B1A3 /* SDMAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		22861980192934ED0048B1A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				22861995192945340048B1A3 /* Device ViewController */,
+				228619861929353B0048B1A3 /* Console ViewController */,
+				22861983192935080048B1A3 /* Plugin ViewController */,
+				22861981192934F20048B1A3 /* Window Controller */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		22861981192934F20048B1A3 /* Window Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22861930192926AF0048B1A3 /* SDMUSBTermWindowController.h */,
+				22861931192926AF0048B1A3 /* SDMUSBTermWindowController.m */,
+			);
+			name = "Window Controller";
+			sourceTree = "<group>";
+		};
+		22861982192934FC0048B1A3 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				228619091929260A0048B1A3 /* MainMenu.xib */,
+				22861932192926AF0048B1A3 /* SDMUSBTermWindowController.xib */,
+				22861937192926D30048B1A3 /* SDMUSBTermPluginViewController.xib */,
+				2286193C192926E50048B1A3 /* SDMUSBTermConsoleViewController.xib */,
+				22861998192945480048B1A3 /* SDMUSBTermDeviceViewController.xib */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		22861983192935080048B1A3 /* Plugin ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22861935192926D30048B1A3 /* SDMUSBTermPluginViewController.h */,
+				22861936192926D30048B1A3 /* SDMUSBTermPluginViewController.m */,
+			);
+			name = "Plugin ViewController";
+			sourceTree = "<group>";
+		};
+		228619841929351A0048B1A3 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				2286199B192947160048B1A3 /* Device TableView DataSource */,
+				22861985192935260048B1A3 /* Plugin TableView DataSource */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		22861985192935260048B1A3 /* Plugin TableView DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2286198E19293A0E0048B1A3 /* Items */,
+				2286193F19292CB60048B1A3 /* SDMUSBTermPluginTableDatasource.h */,
+				2286194019292CB60048B1A3 /* SDMUSBTermPluginTableDatasource.m */,
+			);
+			name = "Plugin TableView DataSource";
+			sourceTree = "<group>";
+		};
+		228619861929353B0048B1A3 /* Console ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2286193A192926E50048B1A3 /* SDMUSBTermConsoleViewController.h */,
+				2286193B192926E50048B1A3 /* SDMUSBTermConsoleViewController.m */,
+			);
+			name = "Console ViewController";
+			sourceTree = "<group>";
+		};
+		228619871929354A0048B1A3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				228619791929344C0048B1A3 /* SDMUSBTermPluginProtocol.h */,
+				228619A6192948D20048B1A3 /* SDMTableViewItemProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		2286198E19293A0E0048B1A3 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				2286198F19293A240048B1A3 /* SDMUSBTermPluginItem.h */,
+				2286199019293A240048B1A3 /* SDMUSBTermPluginItem.m */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		22861995192945340048B1A3 /* Device ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22861996192945480048B1A3 /* SDMUSBTermDeviceViewController.h */,
+				22861997192945480048B1A3 /* SDMUSBTermDeviceViewController.m */,
+			);
+			name = "Device ViewController";
+			sourceTree = "<group>";
+		};
+		2286199B192947160048B1A3 /* Device TableView DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2286199C192947200048B1A3 /* Items */,
+				228619A0192947520048B1A3 /* SDMUSBTermDeviceTableDatasource.h */,
+				228619A1192947520048B1A3 /* SDMUSBTermDeviceTableDatasource.m */,
+			);
+			name = "Device TableView DataSource";
+			sourceTree = "<group>";
+		};
+		2286199C192947200048B1A3 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				228619A31929475F0048B1A3 /* SDMUSBTermDeviceItem.h */,
+				228619A41929475F0048B1A3 /* SDMUSBTermDeviceItem.m */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		228618F0192926090048B1A3 /* usbterm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 228619221929260A0048B1A3 /* Build configuration list for PBXNativeTarget "usbterm" */;
+			buildPhases = (
+				228618ED192926090048B1A3 /* Sources */,
+				228618EE192926090048B1A3 /* Frameworks */,
+				228618EF192926090048B1A3 /* Resources */,
+				2286199319293AEF0048B1A3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2286198D192937A30048B1A3 /* PBXTargetDependency */,
+			);
+			name = usbterm;
+			productName = usbterm;
+			productReference = 228618F1192926090048B1A3 /* usbterm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		228619111929260A0048B1A3 /* usbtermTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 228619251929260A0048B1A3 /* Build configuration list for PBXNativeTarget "usbtermTests" */;
+			buildPhases = (
+				2286190E1929260A0048B1A3 /* Sources */,
+				2286190F1929260A0048B1A3 /* Frameworks */,
+				228619101929260A0048B1A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				228619171929260A0048B1A3 /* PBXTargetDependency */,
+			);
+			name = usbtermTests;
+			productName = usbtermTests;
+			productReference = 228619121929260A0048B1A3 /* usbtermTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2286196C1929341A0048B1A3 /* iBoot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 228619761929341A0048B1A3 /* Build configuration list for PBXNativeTarget "iBoot" */;
+			buildPhases = (
+				228619691929341A0048B1A3 /* Sources */,
+				2286196A1929341A0048B1A3 /* Frameworks */,
+				2286196B1929341A0048B1A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iBoot;
+			productName = iBoot;
+			productReference = 2286196D1929341A0048B1A3 /* iBoot.usbplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		228618E9192926090048B1A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SDM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Sam Marshall";
+				TargetAttributes = {
+					228619111929260A0048B1A3 = {
+						TestTargetID = 228618F0192926090048B1A3;
+					};
+				};
+			};
+			buildConfigurationList = 228618EC192926090048B1A3 /* Build configuration list for PBXProject "usbterm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 228618E8192926090048B1A3;
+			productRefGroup = 228618F2192926090048B1A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				228618F0192926090048B1A3 /* usbterm */,
+				228619111929260A0048B1A3 /* usbtermTests */,
+				2286196C1929341A0048B1A3 /* iBoot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		228618EF192926090048B1A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2286199A192945480048B1A3 /* SDMUSBTermDeviceViewController.xib in Resources */,
+				228618FF192926090048B1A3 /* InfoPlist.strings in Resources */,
+				22861939192926D30048B1A3 /* SDMUSBTermPluginViewController.xib in Resources */,
+				2286190D1929260A0048B1A3 /* Images.xcassets in Resources */,
+				2286193E192926E50048B1A3 /* SDMUSBTermConsoleViewController.xib in Resources */,
+				22861934192926AF0048B1A3 /* SDMUSBTermWindowController.xib in Resources */,
+				22861905192926090048B1A3 /* Credits.rtf in Resources */,
+				2286190B1929260A0048B1A3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		228619101929260A0048B1A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2286191D1929260A0048B1A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2286196B1929341A0048B1A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				228619741929341A0048B1A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		228618ED192926090048B1A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22861999192945480048B1A3 /* SDMUSBTermDeviceViewController.m in Sources */,
+				22861901192926090048B1A3 /* main.m in Sources */,
+				2286199119293A240048B1A3 /* SDMUSBTermPluginItem.m in Sources */,
+				22861947192931420048B1A3 /* NSFileManager+DirectoryLocations.m in Sources */,
+				22861908192926090048B1A3 /* SDMAppDelegate.m in Sources */,
+				22861938192926D30048B1A3 /* SDMUSBTermPluginViewController.m in Sources */,
+				228619A2192947520048B1A3 /* SDMUSBTermDeviceTableDatasource.m in Sources */,
+				22861933192926AF0048B1A3 /* SDMUSBTermWindowController.m in Sources */,
+				2286194119292CB60048B1A3 /* SDMUSBTermPluginTableDatasource.m in Sources */,
+				228619A51929475F0048B1A3 /* SDMUSBTermDeviceItem.m in Sources */,
+				2286193D192926E50048B1A3 /* SDMUSBTermConsoleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2286190E1929260A0048B1A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2286191F1929260A0048B1A3 /* usbtermTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		228619691929341A0048B1A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2286198A192936700048B1A3 /* USBTermPluginIBoot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		228619171929260A0048B1A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 228618F0192926090048B1A3 /* usbterm */;
+			targetProxy = 228619161929260A0048B1A3 /* PBXContainerItemProxy */;
+		};
+		2286198D192937A30048B1A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2286196C1929341A0048B1A3 /* iBoot */;
+			targetProxy = 2286198C192937A30048B1A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		228618FD192926090048B1A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				228618FE192926090048B1A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22861903192926090048B1A3 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22861904192926090048B1A3 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		228619091929260A0048B1A3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2286190A1929260A0048B1A3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		2286191B1929260A0048B1A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2286191C1929260A0048B1A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		228619721929341A0048B1A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				228619731929341A0048B1A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		228619201929260A0048B1A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		228619211929260A0048B1A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		228619231929260A0048B1A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "usbterm/usbterm-Prefix.pch";
+				INFOPLIST_FILE = "usbterm/usbterm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		228619241929260A0048B1A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "usbterm/usbterm-Prefix.pch";
+				INFOPLIST_FILE = "usbterm/usbterm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		228619261929260A0048B1A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/usbterm.app/Contents/MacOS/usbterm";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "usbterm/usbterm-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "usbtermTests/usbtermTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		228619271929260A0048B1A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/usbterm.app/Contents/MacOS/usbterm";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "usbterm/usbterm-Prefix.pch";
+				INFOPLIST_FILE = "usbtermTests/usbtermTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		228619771929341A0048B1A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBoot/iBoot-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				INFOPLIST_FILE = "iBoot/iBoot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = usbplugin;
+			};
+			name = Debug;
+		};
+		228619781929341A0048B1A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iBoot/iBoot-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = "iBoot/iBoot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = usbplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		228618EC192926090048B1A3 /* Build configuration list for PBXProject "usbterm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				228619201929260A0048B1A3 /* Debug */,
+				228619211929260A0048B1A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		228619221929260A0048B1A3 /* Build configuration list for PBXNativeTarget "usbterm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				228619231929260A0048B1A3 /* Debug */,
+				228619241929260A0048B1A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		228619251929260A0048B1A3 /* Build configuration list for PBXNativeTarget "usbtermTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				228619261929260A0048B1A3 /* Debug */,
+				228619271929260A0048B1A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		228619761929341A0048B1A3 /* Build configuration list for PBXNativeTarget "iBoot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				228619771929341A0048B1A3 /* Debug */,
+				228619781929341A0048B1A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 228618E9192926090048B1A3 /* Project object */;
+}
